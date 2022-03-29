@@ -70,7 +70,7 @@ const vue_app = Vue.createApp({
               break;
               }
               return month + dateArray[0] + dateArray[2];
-            }
+            },
       }
 })
 
