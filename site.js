@@ -73,9 +73,13 @@ const vue_app = Vue.createApp({
               return month + " " + dateArray[2] + " " + dateArray[0];
             },
             posterClick(index) {
-            switch (movies[index].posters[0,1,2]){
-              poster.index
-            },
+              if (this.movies[index].posterindex >= this.movies[index].posters.length-1) {
+              this.movies[index].posterindex= 0;
+              }
+              else{
+                this.movies[index].posterindex++;
+              }
+            }
           }
 })
 
